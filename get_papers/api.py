@@ -35,7 +35,7 @@ def search_pubmed(query: str, max_results: int = 200) -> List[str]:
 def fetch_paper_details(pmids: List[str]) -> str:
     """Fetch full paper details for a list of PMIDs in XML format."""
     if not pmids:
-        return ""
+        return 
     logging.info(f"Fetching details for {len(pmids)} PMIDs.")
 
     # Using POST is better for long lists of IDs
