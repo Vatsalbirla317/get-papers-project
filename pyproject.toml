@@ -4,9 +4,11 @@
 name = "get-papers"
 version = "0.1.0"
 description = "A tool to fetch pharma/biotech papers from PubMed."
-authors = ["Your Name <you@example.com>"]
+authors = ["Vatsal birla <birla.vatsal04@gmail.com>"]  # <-- UPDATE THIS
+license = "MIT"                               # <-- ADD THIS
 readme = "README.md"
-packages = [{include = "get_papers"}]  # <-- THIS LINE IS ESSENTIAL
+homepage = "https://github.com/Vatsalbirla317/get-papers-project" # <-- ADD YOUR GITHUB URL
+packages = [{include = "get_papers"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
