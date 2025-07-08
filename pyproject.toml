@@ -1,7 +1,7 @@
 # pyproject.toml
 
 [tool.poetry]
-name = "get-papers"
+name = "get-papers-vb563488"
 version = "0.1.0"
 description = "A tool to fetch pharma/biotech papers from PubMed."
 authors = ["Vatsal birla <birla.vatsal04@gmail.com>"]  # <-- UPDATE THIS
