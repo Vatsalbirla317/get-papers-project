@@ -1,0 +1,24 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "get-papers"
+version = "0.1.0"
+description = "A tool to fetch pharma/biotech papers from PubMed."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "get_papers"}]  # <-- THIS LINE IS ESSENTIAL
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+typer = {extras = ["all"], version = "^0.9.0"}
+lxml = "^4.9.3"
+pydantic = "^2.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# This section makes the command `get-papers-list` available
+[tool.poetry.scripts]
+get-papers-list = "cli:app"
